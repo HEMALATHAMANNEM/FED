@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+
+</head>
+
+<body>
+    <form action="#">
+        <h3 align="center">Customer Registration</h3>
+        User Name:<input type="text" pattern="[A-Za-z]+" name="name" minlength="3" maxlength="20"
+            required /><br /><br />
+        Password:<input type="password" name="pwd" minlength="8" maxlength="15" required /><br /><br />
+        Email:<input type="email" name="email" required /><br /><br />
+        Gender:
+        <br /><input type="radio" name="gender" value="female">Female
+        <br /><input type="radio" name="gender" value="male">Male
+        <br /><input type="radio" name="gender" value="others">Others
+        <br /><br />
+        Age(in Years):<input type="number" name="age" min="12" max="60" /><br /><br />
+        Address: <input type="textarea" name="address" rows="4" cols="20" /><br /><br />
+        Company Website:<input type="url" name="website" /><br /><br />
+        Choose Country:
+        <select name="India" id="ind">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="China">China</option>
+            <option value="Germany">Germany</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <br /><br />
+        Date of Journey: <input type="date" name="doj" /><br /><br />
+        <input type="submit" onClick="validate1()" value="Register" />
+        <input type="reset" value="clear" />
+        <h4 id="msg"> </h4>
+        <script>
+            function validate1() {
+                document.writeln("Registered Successfully!");
+                //document.getElementsById("msg").innerHTML="Registered Successfully!";
+            }
+        </script>
+    </form>
+</body>
+
+</html>
