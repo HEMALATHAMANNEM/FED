@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <script>
+        function revStr(str) {
+            if (!str || str.length < 2 || typeof str != "string") {
+                return 'Not valid'
+            }
+            const reverseArray = [];
+            const length = str.length - 1;
+            for (let i = length; i >= 0; i--) {
+                reverseArray.push(str[i]);
+            }
+            return reverseArray.join('');
+        }
+        document.write(revStr("ABCD RGT"))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <script>
+        function alphaNumeric(input) {
+            var letNum = /^[0-9a-zA-Z]+$/;
+            //document.write(input.match(letNum))
+            if (!(input.match(letNum) === null)) {
+                return true;
+            }
+            else {
+                alert("Not matched");
+                return false;
+            }
+        }
+        document.write(alphaNumeric("5srf"));
+    </script>
+</body>
+
+</html>

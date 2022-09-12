@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <script>
+        function cardNumMatch(input) {
+            var cNum = /^(?:3[47][0-9]{13})$/;
+            //document.write(input.match(cNum))
+            if (!(input.match(cNum) === null)) {
+                return true;
+            }
+            else {
+                alert("Not matched");
+                return false;
+            }
+        }
+        document.write(cardNumMatch("343456789023212"));
+    </script>
+</body>
+
+</html>
